@@ -1,0 +1,55 @@
+.calculator {
+    background: rgb(55, 55, 55);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .75rem;
+    width: 325px;
+    border: 6px solid;
+    border-color: rgb(44, 44, 44);
+    padding: .75rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen {
+    grid-column: 1 / 5;
+    border-radius: 2rem;
+    font-size: 4rem;
+    height: 6rem;
+    color: black;
+    background: white;
+    text-align: end;
+    padding: .5rem;
+}
+
+.symbol,
+.number {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .25s;
+    font-size: 1.25rem;
+}
+
+.symbol {
+    background: orange;
+}
+
+.symbol:hover {
+    background: rgb(195, 129, 5);
+}
+
+.number {
+    background: gainsboro;
+}
+
+.number:hover {
+    background: rgb(147, 147, 147);
+}
+
